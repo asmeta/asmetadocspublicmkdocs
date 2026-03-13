@@ -5,7 +5,7 @@ title: Structure of an ASM
 An ASM model is structured into four sections: an header, an initialization, a body and a main rule. The schema below shows the concrete notation for each
 section.
 
-|||
+| **Model element** | **Concrete syntax** |
 | --- | --- |
 | **Asm declaration**  | [**`asyncr`**] **`asm`** *name* |
 | |where:</br> - *name* is the name of the ASM. It must be equal to the name of the ASM file (as name.asm) The keyword **asyncr** specifies if the ASM is an *asynchronous* multi-agent or not. If omitted, the ASM is considered a *synchronous* multi-agent ASM. |

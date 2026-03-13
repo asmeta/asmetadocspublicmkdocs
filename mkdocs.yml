@@ -1,5 +1,5 @@
-site_name: AsmetaL Syntax - Quick Guide
-site_description: AsmetaL (AsmM) concrete syntax quick guide
+site_name: AsmetaL documentation 
+site_description: Asmeta documentation (for now only asmetal)
 theme:
   name: material
 nav:

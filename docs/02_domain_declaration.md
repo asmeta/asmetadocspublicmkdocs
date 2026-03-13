@@ -12,7 +12,7 @@ type-domains*, domains for building
 data structures (like sets, sequences, bags, maps, tuples etc.) over other domains; *abstract type-domain*s,
  dynamic user-named domains whose elements have no precise structure and are
  imported as fresh elements from a possibly infinite reserve by means of extend
- rules (see section [Transition rules](06_)); and *enum* *domains*, finite user-named enumerations to introduce new concepts of
+ rules (see section [Transition rules](05_transition_rules.md)); and *enum* *domains*, finite user-named enumerations to introduce new concepts of
  type (e.g. one may define the enumeration Color = {RED, GREEN, BLUE} to introduce the new concept of "color").
 
 *Concrete domains* are user-named sub-domains of
@@ -32,7 +32,7 @@ that, the Reserve domain is considered "abstract", and therefore
 extend rule (see section [Transition rules](#rules)) – it can not be updated directly by
 other transition rules –.
 
-| **Model****element** | **Concrete syntax** |
+| **Model element** | **Concrete syntax** |
 | --- | --- |
 | **AnyDomain** | **anydomain** D  where D is the name  of the domain representing any other type-domain. A predefined generic domain  named Any is declared in the standard library and considered the most generic  one. |
 | **BasicTD** | **basic** **domain** D  Only **Complex**, **Real**, **Integer**,  **Natural**, **String**, **Char**, **Boolean**, **Rule**, and **Undef** are allowed (users can not define other  basic domains). They are declared in the standard library as  "predefined" basic type-domains. |
