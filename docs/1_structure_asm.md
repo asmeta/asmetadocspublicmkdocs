@@ -1,4 +1,3 @@
-## 2. Structure of an ASM
 
 An ASM model is structured
 into four sections: an header, an initialization, a
