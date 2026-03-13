@@ -19,8 +19,9 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.superfences:
       extend_pygments_lang:
-        - name: asmetal
+          name: asmetal
           lang: php
-  - pymdownx.inlinehilite
