@@ -1,3 +1,5 @@
 # AsmetaL MkDocs Site
 
-Generated MkDocs site from AsmetaL_quickguide.html
+initially contains the docs from the AsmetaL_quickguide.html
+
+using mkdocs
