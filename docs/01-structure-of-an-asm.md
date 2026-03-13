@@ -1,5 +1,8 @@
+---
+title: Structure of an ASM
+---
 
-## 2.2 Structure of an ASM  
+## 1. Structure of an ASM  
 
 An ASM model is structured into four sections: an header, an initialization, a body and a main rule. The schema below shows the concrete notation for each
 section.
@@ -11,7 +14,7 @@ section.
 | **Header** | [ **`import`** *m1* [**(** id11,...,id1h1 **)**] **...**</br>  **`import`** mk [**(** idk1,...,idkhk **)**]] </br> [ **`export`** id1,...,ide ] or [**`export`** \*] |
 | |where:</br> -*m1,...,mk* are the names of the imported modules</br> - idi1,...,idihi are names for domains, functions and rules which are imported from module mi (if they are omitted all the content of the export clause of mi is imported);</br>- id1,...,ide are names for domains, functions and rules which can be exported from the ASM. **export*** denotes that all functions and rules of the ASM can be exported; |
 ||**signature** **:** </br> [ dom_decl1 ... dom_decln ] </br> [ fun_decl1 ... fun_declm ] |
-|| - dom_decl1,...,dom_decln are declarations of domains used in the ASM (see section [Domain declarations](2_domain_declaration.md));</br> - fun_decl1,...,fun_declm are declarations of functions used in the ASM (see section [Function declarations](#funDecl)). |
+|| - dom_decl1,...,dom_decln are declarations of domains used in the ASM (see section [Domain declarations](02_domain_declaration.md));</br> - fun_decl1,...,fun_declm are declarations of functions used in the ASM (see section [Function declarations](03_function_declarations.md)). |
 | **Body** | **definitions :** </br> [ **domain** D1 **=** Dterm1 ... **domain** Ds **=** Dterms ] </br> [ **function** F1 [**(** p11 **in** d11,...,p1k1 **in** d1k1 **)**]**=** Fterm1 ... **function** Ff [**(** pf1 **in** df1,...,pfkf **in** dfkf **)**]**=** Ftermf ] </br> [ [**macro**] **rule** R1 [**(** x11 **in** b11,...,x1k1 **in** b1k1 **)**] = rule1 ... [**macro**] **rule** Rr [**(** xr1 **in** br1,...,xrkr **in** brkr **)**] = ruler] </br>[ **turbo rule** TR1 [**(** x11 **in** b11,...,x1k1 **in** b1k1 **)**][ **in** b1] = rule1 ... **turbo** **rule** TRr [**(** xr1 **in** br1,...,xrkr **in** brkr **)**] [**in**bx]= ruler ] </br> [ **axiom** I1 **over** id11,...,id1s1 : term1 ... **axiom** Iv **over** idv1,...,idvsv : termv ] 
 || where: - D1,...,Dd are names of static concrete domains declared in the signature (see [Header](#headerASM)); - F1,...,Ff are names of static or derived functions declared in the signature (see [Header](#headerASM)); - Dterm1,...,Dtermd and Fterm1,...,Ftermf are terms (see section [Terms](#terms)); - pij are variables which specify the formal parameters of the function Fi, and dij are the domains where pij take their value; - R1,...,Rr TR1,...,TRr are names for transition rules (see section [Transition rules](#rules)); - I1,...,Iv are names for axioms - xij are variables which specify the formal parameters of the rule Ri, and bij are the domains where pij take their value; - bi are domains where return values of turbo rules (with return value) range; - rule1,...,ruler are transition rules (see section [Transition rules](#rules)); - idij are names of domains, functions* and rules constrained by the axioms; - termi is a term (see section [Terms](#terms)) representing the boolean-valued expression of the constraint. *When functions are overloaded it is necessary to indicate their domain, as in f(d)with f the function name and d the name of the function domain. |
 |**Main**|**rule** [ **main rule** R **=** rule ]

@@ -10,7 +10,7 @@ type-domains*, domains for building
 data structures (like sets, sequences, bags, maps, tuples etc.) over other domains; *abstract type-domain*s,
  dynamic user-named domains whose elements have no precise structure and are
  imported as fresh elements from a possibly infinite reserve by means of extend
- rules (see section [Transition rules](#rules)); and *enum* *domains*, finite user-named enumerations to introduce new concepts of
+ rules (see section [Transition rules](06_)); and *enum* *domains*, finite user-named enumerations to introduce new concepts of
  type (e.g. one may define the enumeration Color = {RED, GREEN, BLUE} to introduce the new concept of "color").
 
 *Concrete domains* are user-named sub-domains of
