@@ -15,11 +15,14 @@ turbo rules.
 **`skip`** 
 #### UpdateRule
 **`l:=t`**    
-where:  - t is a generic term.      - l can be either a location term f(t1,...,tn) or a location variable.      
+where:  
+- t is a generic term.
+- l can be either a location term f(t1,...,tn) or a location variable (like `$x`).      
 Note that all the rules which return a value t, contain an update rule as in `result:=t`, where `result` is a reserved 0-ary function  acting as placeholder in which to store the intended return value. 
 
 #### BlockRule
-**`par`** R1 R2 ... Rn **`endpar`**  where R1,R2,...,Rn are transition rules. 
+**`par`** R1 R2 ... Rn **`endpar`**  
+where R1,R2,...,Rn are transition rules. 
 
 ### ConditionalRule
 **`if`** G **`then`** Rthen [**`else`** Relse] **`endif`**  
@@ -28,7 +31,7 @@ where:
 - Rthen and Relse are transition rules. If Relse is omitted it  is assumed "**else skip**" as default.
 
 
-## Reference Cars
+## Reference Card
 
 | **Model element** | **Concrete syntax** |
 | --- | --- |
