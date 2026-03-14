@@ -22,7 +22,7 @@ Note that all the rules which return a value t, contain an update rule as in `re
 **`par`** R1 R2 ... Rn **`endpar`**  where R1,R2,...,Rn are transition rules. 
 
 ### ConditionalRule
-**if**G **then** Rthen [**else** Relse] **endif**  
+**`if`** G **`then`** Rthen [**`else`** Relse] **`endif`**  
 where:  
 - G is a term representing a boolean condition.
 - Rthen and Relse are transition rules. If Relse is omitted it  is assumed "**else skip**" as default.
