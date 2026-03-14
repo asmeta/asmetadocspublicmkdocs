@@ -11,33 +11,24 @@ the latter are rules, like the *sequence rule* and the *iterate rule*,
 introduced to support practical composition and structuring principles of the ASMs. Other rule schemes are derived from the basic and the
 turbo rules.
 
-  - [SkipRule](#SkipR)
-  - [UpdateRule](#UpdateR)
-  - [BlockRule](#BlockR)
-  - [ConditionalRule](#CondR)
-  - [CaseRule](#CaseR)
-  - [LetRule](#LetR)
-  - [ForallRule](#ForallR)
-  - [ChooseRule](#ChooseR)
-  - [MacroCallRule](#MacroCallR)
-  - [ExtendRule](#ExtendR)
-  - [SeqRule](#SeqR)
-  - [IterateRule](#IteraterR)
-  - [IterativeWhileRule](#IterativeWhileR)
-  - [TurboCallRule](#TurboCallR)
-  - [RecursiveWhileRule](#RecWhileR)
-  - [TurboLocalStateRule](#TurboLocalStateR)
-  - [TryCatchRule](#tryCatchR)
-  - [TurboReturnRule](#TurboReturnR)
-  - [TermAsRule](#TermAsR)
-
 #### SkipRule
 **`skip`** 
 #### UpdateRule
-**`l:=t`**    where:  - t is a generic term.      - l can be either a location term f(t1,...,tn) or a location variable.      Note that all the rules, which return a value t, contain an update rule as in result:=t, where result is a reserved 0-ary function  acting as placeholder in which to store the intended return value. 
+**`l:=t`**    
+where:  - t is a generic term.      - l can be either a location term f(t1,...,tn) or a location variable.      
+Note that all the rules which return a value t, contain an update rule as in `result:=t`, where `result` is a reserved 0-ary function  acting as placeholder in which to store the intended return value. 
+
 #### BlockRule
 **`par`** R1 R2 ... Rn **`endpar`**  where R1,R2,...,Rn are transition rules. 
 
+### ConditionalRule
+**if**G **then** Rthen [**else** Relse] **endif**  
+where:  
+- G is a term representing a boolean condition.
+- Rthen and Relse are transition rules. If Relse is omitted it  is assumed "**else skip**" as default.
+
+
+## Reference Cars
 
 | **Model element** | **Concrete syntax** |
 | --- | --- |
