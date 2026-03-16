@@ -65,7 +65,20 @@ conventions are adopted:
 
 We use the following rules to distinguish among names of *domains*, *functions*, *enumeration elements*, *rules*, *variables*:  
 
-**ID_VARIABLE** a
+$${\color{red}{\text{ID\\_VARIABLE}}}$$ 
+a string beginning with the dollar sign "$"; `$x $abc`
+
+$${\color{red}{\text{ID\\_ENUM}}}$$ 
+a string of length greater than or equal
+to two and consisting of upper-case letters only;  `ON OFF RED`
+
+$${\color{red}{\text{ID\\_DOMAIN}}}$$  a string beginning with an upper-case letter;  `Integer` `X` `SetOfBags` `Person`
+
+$${\color{red}{\text{ID\\_RULE}}}$$  a string beginning with the lower-case letter "r" followed by the underscore symbol "\_";  `r_SetMyPerson` `r_update` 
+
+$${\color{red}{\text{ID\\_FUNCTION}}}$$  a string beginning with a lower-case letter, but not starting with "r\_";  `plus` `minus` `re`
+
+<!-- **ID_VARIABLE** a
 string begining with the dollar sign "$";
 e.g. $x $abc $pippo  
 
@@ -73,16 +86,17 @@ e.g. $x $abc $pippo
 to two and consisting of upper-case letters only; e.g. ON OFF
 RED  
 
-**ID_DOMAIN** a string begining with an upper-case letter;
+**ID_DOMAIN** a string beginning with an upper-case letter;
 e.g. Integer
 X SetOfBags Person  
 
-**ID_RULE** a string begining the lower-case letter "r"
+**ID_RULE** a string beginning with the lower-case letter "r"
 followed by the underscore symbol "_"; e.g. r_SetMyPerson    r_update  
 
 **ID_FUNCTION** a
-string begining with a lower-case letter, but not
+string beginning with a lower-case letter, but not
 starting with "r_"; e.g. plus minus re
+-->
 
 ## Comments
 
