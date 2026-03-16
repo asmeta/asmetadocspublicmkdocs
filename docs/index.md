@@ -68,15 +68,15 @@ We use the following rules to distinguish among names of *domains*, *functions*,
 <span style="color: red;">ID_VARIABLE</span>
 a string beginning with the dollar sign "$"; `$x $abc`
 
-$${\color{red}{\text{ID\\_ENUM}}}$$ 
+<span style="color: red;">ID_ENUM</span>
 a string of length greater than or equal
 to two and consisting of upper-case letters only;  `ON OFF RED`
 
-$${\color{red}{\text{ID\\_DOMAIN}}}$$  a string beginning with an upper-case letter;  `Integer` `X` `SetOfBags` `Person`
+<span style="color: red;">ID_DOMAIN</span>  a string beginning with an upper-case letter;  `Integer` `X` `SetOfBags` `Person`
 
-$${\color{red}{\text{ID\\_RULE}}}$$  a string beginning with the lower-case letter "r" followed by the underscore symbol "\_";  `r_SetMyPerson` `r_update` 
+<span style="color: red;">ID_RULE</span>  a string beginning with the lower-case letter "r" followed by the underscore symbol "\_";  `r_SetMyPerson` `r_update` 
 
-$${\color{red}{\text{ID\\_FUNCTION}}}$$  a string beginning with a lower-case letter, but not starting with "r\_";  `plus` `minus` `re`
+<span style="color: red;">ID_FUNCTION</span>  a string beginning with a lower-case letter, but not starting with "r\_";  `plus` `minus` `re`
 
 <!-- **ID_VARIABLE** a
 string begining with the dollar sign "$";
