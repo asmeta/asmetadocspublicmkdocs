@@ -65,7 +65,7 @@ conventions are adopted:
 
 We use the following rules to distinguish among names of *domains*, *functions*, *enumeration elements*, *rules*, *variables*:  
 
-$${\color{red}{\text{ID\\_VARIABLE}}}$$ 
+<span style="color: red;">ID_VARIABLE</span>
 a string beginning with the dollar sign "$"; `$x $abc`
 
 $${\color{red}{\text{ID\\_ENUM}}}$$ 
